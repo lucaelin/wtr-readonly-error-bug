@@ -1,0 +1,23 @@
+{
+  "name": "wtr-chai-readonly-bug",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "npx web-test-runner --files **/*.test.ts",
+    "test:readonly": "npx web-test-runner --files packages/readonly.test.ts",
+    "test:stringify": "npx web-test-runner --files packages/stringify.test.ts --manual",
+    "test:stringify-fixed": "npx web-test-runner --files packages/stringify-fixed.test.ts --manual"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@open-wc/testing": "^4.0.0",
+    "@types/chai": "^4.3.16",
+    "@types/mocha": "^10.0.6",
+    "@web/dev-server-esbuild": "^1.0.2",
+    "@web/test-runner": "^0.18.1",
+    "@web/test-runner-puppeteer": "^0.16.0"
+  }
+}
